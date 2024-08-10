@@ -18,7 +18,7 @@ Follow these steps to set up and run the DermAI server:
 1. **Clone the Repository**:  
    Clone the DermAI server repository from GitHub:
    ```bash
-   git clone https://github.com/poshan-p/dermai.git
+   git clone https://github.com/The-Vegapunks/dermai.git
    cd dermai
    ```
 
