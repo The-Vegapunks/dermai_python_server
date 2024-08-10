@@ -66,7 +66,3 @@ You can test the `/predict` endpoint using tools like `Postman` or `curl` by sen
 ## Conclusion
 
 With the DermAI server set up and running, you can now process images for skin condition classification via the `/predict` endpoint. This server is a critical component of the DermAI application, enabling AI-driven healthcare solutions. If you encounter any issues or need further customization, refer to the project documentation or contact the development team.
-
---- 
-
-This documentation should guide users through setting up the DermAI server and interacting with the `/predict` endpoint effectively.
