@@ -71,7 +71,7 @@ class Model:
         """
         img_width, img_height = 400,400
 
-        predict_img = Image.open(img_data)
+        predict_img = Image.open(img_data).convert('RGB')
         
         # predict_img = load_img(img)
         predict_img = predict_img.resize((img_width, img_height))
@@ -84,7 +84,7 @@ class Model:
         converted_values = [float(value) for value in predicted[0]]
         predicted_name = np.argmax(converted_values)
         
-        class_name = ['Enfeksiyonel', 'Ekzama', 'Akne', 'Pigment', 'Benign', 'Malign']
+        class_name = [(1, 'Enfeksiyonel'), (2, 'Ekzama'), (3, 'Akne'), (4, 'Pigment'), (5, 'Benign'), (6, 'Malign')]
         
         for index in range(0, len(class_name)):
             print(f"{class_name[index]} --> {converted_values[index]}")
